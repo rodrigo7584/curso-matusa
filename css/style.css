@@ -1,17 +1,213 @@
 :root {
-  --verde-100: #000;
-  --verde-200: #003;
-  #67C122
-  #2B6900
-  #95E861
-  #71FF66
-  #000000
-  #ffffff
+  font-size: 62.5%;
+  --verde-100: #95e861;
+  --verde-200: #71ff66;
+  --verde-300: #67c122;
+  --verde-400: #2b6900;
+  --preto: #000000;
+  --branco: #ffffff;
 }
-93 h1
-72 h2
-63 | 62 | 66 h3
-35 | 33 h4
-23 | 22 h5
-17 h6 p
-
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.texto-verde {
+  color: var(--verde-300);
+}
+.texto-preto {
+  color: var(--preto);
+}
+.texto-branco {
+  color: var(--branco);
+}
+.bg-verde {
+  background-color: var(--verde-300);
+}
+h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h6 {
+  font-weight: 700;
+}
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--branco);
+}
+a:hover {
+  color: var(--branco);
+}
+.btn-verde {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  background: linear-gradient(90deg, var(--verde-400), var(--verde-100));
+  filter: drop-shadow(0 0 0.4rem var(--verde-200));
+  -webkit-filter: drop-shadow(0 0 0.4rem var(--verde-200));
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  padding: 0.8rem 2.3rem;
+}
+.btn-verde:hover {
+  filter: drop-shadow(0 0 0.3rem var(--verde-200)) brightness(0.8);
+  -webkit-filter: drop-shadow(0 0 0.3rem var(--verde-200)) brightness(0.8);
+}
+section.topo {
+  min-height: 90vh;
+  background-image: url('../img/bg-topo.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.topo .row {
+  min-height: 90vh;
+}
+section.topo .legenda-video {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+section.detaques .cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+}
+section.detaques .cartoes .cartao {
+  display: grid;
+  align-content: flex-start;
+  justify-items: center;
+  width: 15rem;
+  row-gap: 1rem;
+  text-align: center;
+  color: var(--branco);
+}
+section.detaques .cartoes .cartao .icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  height: 13.5rem;
+  width: 13.5rem;
+  border: 0.3rem solid var(--branco);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+section.detaques .cartoes .cartao .icone img {
+  height: 7.5rem;
+}
+section.bonus {
+  background: url('../img/bg-2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.bonus .box-bonus {
+  margin: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+section.bonus .item-bonus {
+  display: grid;
+  justify-items: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.3rem solid var(--verde-300);
+  padding: 2rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  overflow: hidden;
+}
+section.bonus .item-bonus .titulo {
+  margin-left: -2rem;
+  display: inline-block;
+  background: linear-gradient(90deg, var(--verde-400), var(--verde-100));
+  padding: 0.5rem 5rem 0.5rem 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+section.bonus .item-bonus .box-valor {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1.5rem;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: var(--verde-300);
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+section.bonus .item-bonus .box-valor span.valor {
+  text-transform: uppercase;
+  color: var(--branco);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+section.bonus .item-bonus .box-preco {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+section.bonus .item-bonus .box-preco .risco {
+  position: absolute;
+}
+section.bonus .item-bonus .box-preco span.cifrao {
+  font-size: 1.3rem;
+  color: var(--preto);
+  font-weight: 700;
+}
+section.bonus .item-bonus .box-preco span.reais {
+  font-size: 3.3rem;
+  color: var(--branco);
+  font-weight: 700;
+  line-height: 0.9;
+}
+section.bonus .item-bonus .box-preco span.centavos {
+  font-size: 1.3rem;
+  color: var(--branco);
+  font-weight: 700;
+  line-height: 0.9;
+}
+section.bonus .item-bonus .box-preco span.mes {
+  font-size: 1.3rem;
+  color: var(--preto);
+  font-weight: 700;
+  line-height: 0.9;
+}

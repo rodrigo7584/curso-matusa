@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso Matuza</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap.css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -37,11 +44,11 @@
   <body>
     <section class="topo">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center align-content-center">
           <div class="col">
-            <h1>CURSO MATUZA</h1>
-            <h2>DO “ZERO” AO INFINITO</h2>
-            <a href="#" class="btn-green"> Quero mudar de vida agora </a>
+            <h1 class="texto-verde">CURSO MATUZA</h1>
+            <h2 class="texto-branco">DO “ZERO” AO INFINITO</h2>
+            <a href="#" class="btn-verde"> Quero mudar de vida agora </a>
           </div>
           <div class="col">
             <vm-player controls class="top-video">
@@ -58,7 +65,7 @@
                 />
               </vm-video>
             </vm-player>
-            <p>
+            <p class="texto-branco legenda-video">
               Não foi fácil chegar onde cheguei. Mas não precisa ser difícil pra
               você. Neste curso, vou te entregar do “Zero” e de forma
               simplificada, os segredos que ninguém conta de como ter sucesso e
@@ -68,96 +75,100 @@
         </div>
       </div>
     </section>
-    <section class="detaques">
+    <section class="detaques bg-verde py-5">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h3>NÃO EXISTE MOMENTO RUIM.</h3>
-            <h3>Crise? Mercado em baixa? ESQUECEE!</h3>
+          <div class="col text-center">
+            <h3 class="texto-preto">NÃO EXISTE MOMENTO RUIM.</h3>
+            <h3 class="texto-branco">Crise? Mercado em baixa? ESQUECEE!</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <p class="text-center texto-preto">
               Os segredos para surfar em qualquer situação de mercado e as
               melhores estratégias para operar em OB, serão revelados à você em
               meu curso
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row pt-5">
           <div class="col">
-            <h4>O QUE VOU APRENDER COM O CURSO DO MATUZA?</h4>
-            <div class="cards">
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-brain.svg"
-                    alt="icone uma lampada com varias engrenagem"
-                  />
-                </div>
-                <h5>Psicologia trader</h5>
+            <h4 class="text-center texto-branco">
+              O QUE VOU APRENDER COM O CURSO DO MATUZA?
+            </h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-9 cartoes">
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-brain.svg"
+                  alt="icone uma lampada com varias engrenagem"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-bulb.svg"
-                    alt="icone uma lupa na frente de um grafico"
-                  />
-                </div>
-                <h5>Gerenciamento de risco</h5>
+              <h5>Psicologia trader</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-bulb.svg"
+                  alt="icone uma lupa na frente de um grafico"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-search.svg"
-                    alt="icone grafico de barras"
-                  />
-                </div>
-                <h5>Análise gráfica</h5>
+              <h5>Gerenciamento de risco</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-search.svg"
+                  alt="icone grafico de barras"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-graphic.svg"
-                    alt="icone lupa olhando um formulario"
-                  />
-                </div>
-                <h5>Análise técnica</h5>
+              <h5>Análise gráfica</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-graphic.svg"
+                  alt="icone lupa olhando um formulario"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-search-form.svg"
-                    alt="icone engrenagens e seta apontando pra cima"
-                  />
-                </div>
-                <h5>Análise fundamentalista</h5>
+              <h5>Análise técnica</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-search-form.svg"
+                  alt="icone engrenagens e seta apontando pra cima"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-gears-up.svg"
-                    alt="icone martelo com uma lampada do lado"
-                  />
-                </div>
-                <h5>Operacionais assertivos</h5>
+              <h5>Análise fundamentalista</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-gears-up.svg"
+                  alt="icone martelo com uma lampada do lado"
+                />
               </div>
-              <div class="card">
-                <div class="icone">
-                  <img
-                    src="./img/icon-hammer-bulb.svg"
-                    alt="icone de uma cabeça com um cerebro"
-                  />
-                </div>
-                <h5>Técnica secreta de alavancagem</h5>
+              <h5>Operacionais assertivos</h5>
+            </div>
+            <div class="cartao">
+              <div class="icone">
+                <img
+                  src="./img/icon-hammer-bulb.svg"
+                  alt="icone de uma cabeça com um cerebro"
+                />
               </div>
+              <h5>Técnica secreta de alavancagem</h5>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <p class="texto-preto text-center">
               Tudo que você precisa saber para operar como os grandes players,
               sem complicação, de forma didática e objetivo.
             </p>
@@ -165,17 +176,17 @@
         </div>
       </div>
     </section>
-    <section class="bonus">
+    <section class="bonus py-5">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h3>ADQUIRA O CURSO E</h3>
-            <h2>OBTENHA UM MEGA BÔNUS</h2>
+          <div class="col text-center">
+            <h2 class="texto-branco">ADQUIRA O CURSO E</h2>
+            <h1 class="texto-verde">OBTENHA UM MEGA BÔNUS</h1>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <p>
+        <div class="row justify-content-center pt-3">
+          <div class="col-7 text-center">
+            <p class="texto-branco">
               Adquirindo nosso curso nos próximos minutos, além de aprender a
               chave para o sucesso e destravar lucros esmagadores operando em
               OB, você ainda poderá lucrar muito com nossos bonûs exclusivos
@@ -183,67 +194,71 @@
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-10">
             <div class="box-bonus">
-              <h4>BÔNUS #1</h4>
-              <h4>
-                1 MÊS GRÁTIS DA SALA DE <br />
-                SINAIS GAIN MÁXIMO.
-              </h4>
-              <p>
-                A oportunidade de zerar seu investimento com meu curso de OB
-                está aqui. <br />
-                Com uma assertividade de 99%, a melhor sala de sinais do país
-                estará ao seu alcance. <br />
-                Receba os melhores sinais e tenha oportunidade de obter
-                incríveis ganhos e até “zerar” seu investimento nesse curso pra
-                você estudar e aprender com toda tranquilidade enquanto recebe
-                as melhores dicas do mercado.
-              </p>
-              <div class="box-valor">
-                <div class="risco"></div>
-                <span class="valor">valor:</span>
-                <span class="cifrao">R$</span>
-                <span class="reais">45</span>
-                <div class="centavos-mes">
-                  <span class="centavos">,99</span><br />
-                  <span class="mes">/mês</span>
+              <div class="item-bonus">
+                <h4 class="titulo texto-branco">BÔNUS #1</h4>
+                <h4 class="texto-verde">
+                  1 MÊS GRÁTIS DA SALA DE <br />
+                  SINAIS GAIN MÁXIMO.
+                </h4>
+                <p class="texto-branco">
+                  A oportunidade de zerar seu investimento com meu curso de OB
+                  está aqui. <br />
+                  Com uma assertividade de 99%, a melhor sala de sinais do país
+                  estará ao seu alcance. <br />
+                  Receba os melhores sinais e tenha oportunidade de obter
+                  incríveis ganhos e até “zerar” seu investimento nesse curso
+                  pra você estudar e aprender com toda tranquilidade enquanto
+                  recebe as melhores dicas do mercado.
+                </p>
+                <div class="box-valor">
+                  <span class="valor">valor:</span>
+                  <div class="box-preco">
+                    <div class="risco"></div>
+                    <span class="cifrao">R$</span>
+                    <span class="reais">45</span>
+                    <div class="centavos-mes">
+                      <span class="centavos">,99</span><br />
+                      <span class="mes">/mês</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="box-bonus">
-              <h4>BÔNUS #2</h4>
-              <h4>
-                ULTIMATE BOT <br />
-                (ROBÔ DE O.B)
-              </h4>
-              <p>
-                Automatize suas operações e ganhe dinheiro com o nosso Ultimate
-                BOT. <br />
-                Nosso robô identifica as tendências de mercado e encontra as
-                melhores oportunidades com entradas e saídas assertivas e ganhos
-                consistentes. <br />
-                Sem perder tempo e sem quebra cabeça, nosso robô fará todo o
-                trabalho pesado para você e aumentará ainda mais seus ganhos.
-              </p>
-              <div class="box-valor">
-                <div class="risco"></div>
-                <span class="valor">valor:</span>
-                <span class="cifrao">R$</span>
-                <span class="reais">499</span>
-                <div class="centavos-mes">
-                  <span class="centavos">,99</span><br />
-                  <span class="mes">/mês</span>
+              <div class="item-bonus">
+                <h4 class="titulo texto-branco">BÔNUS #2</h4>
+                <h4 class="texto-verde">
+                  ULTIMATE BOT <br />
+                  (ROBÔ DE O.B)
+                </h4>
+                <p class="texto-branco">
+                  Automatize suas operações e ganhe dinheiro com o nosso
+                  Ultimate BOT. <br />
+                  Nosso robô identifica as tendências de mercado e encontra as
+                  melhores oportunidades com entradas e saídas assertivas e
+                  ganhos consistentes. <br />
+                  Sem perder tempo e sem quebra cabeça, nosso robô fará todo o
+                  trabalho pesado para você e aumentará ainda mais seus ganhos.
+                </p>
+                <div class="box-valor">
+                  <span class="valor">valor:</span>
+                  <div class="box-preco">
+                    <div class="risco"></div>
+                    <span class="cifrao">R$</span>
+                    <span class="reais">499</span>
+                    <div class="centavos-mes">
+                      <span class="centavos">,87</span><br />
+                      <span class="mes">/mês</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col text-center">
             <a href="#" class="btn-verde">
               Quero mudar minha vida financeira
             </a>
@@ -290,10 +305,148 @@
                   <img src="./img/slide-2.png" alt="" />
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prova-sucesso">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>A PROVA DO SUCESSO</h2>
+            <h2>FAÇA COMO ELES</h2>
+            <p>
+              Confira aqui depoimento de alunos que lucraram muito e
+              multiplicaram de forma exponencial seu capital com o conteúdo do
+              nosso curso.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              class="celular"
+              src="./img/cel-1.png"
+              alt="celular com depoimento"
+            />
+            <img
+              class="celular"
+              src="./img/cel-2.png"
+              alt="celular com depoimento"
+            />
+            <img
+              class="celular"
+              src="./img/cel-3.png"
+              alt="celular com depoimento"
+            />
+            <img
+              class="celular"
+              src="./img/cel-4.png"
+              alt="celular com depoimento"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="btn-preto" href="#"> Quero mudar minha vida também! </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="comece">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h3>COMECE SUA</h3>
+            <h2>VIRADA DE CHAVE AGORA</h2>
+            <p>
+              Essa oportunidade é única e a qualquer momento pode ser tirada do
+              ar. Você não deve perder essa anúncio, pois, pode ser sua última
+              chance de virar a chave e alavancar sua vida para novos patamares
+              financeiros.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="precos">
+              <div class="box-preco">
+                <h5>CURSO SEGREDOS DE MESTRE</h5>
+                <div class="preco">
+                  <div class="risco"></div>
+                  <div class="cifrao">R$</div>
+                  <div class="reais">785</div>
+                  <div class="centavos">,53</div>
+                </div>
+              </div>
+              <span class="sinal-mais">+</span>
+              <div class="box-preco">
+                <h5>BÔNUS 1 MÊS DE SALA DE SINAIS</h5>
+                <div class="preco">
+                  <div class="risco"></div>
+                  <div class="cifrao">R$</div>
+                  <div class="reais">49</div>
+                  <div class="centavos">,99</div>
+                </div>
+              </div>
+              <span class="sinal-mais">+</span>
+              <div class="box-preco">
+                <h5>BÔNUS “ULTIMATE BOT” ROBÔ DE O.B</h5>
+                <div class="preco">
+                  <div class="risco"></div>
+                  <div class="cifrao">R$</div>
+                  <div class="reais">499</div>
+                  <div class="centavos">,87</div>
+                </div>
+              </div>
+              <div class="box-total">
+                <p class="total">TOTAL:</p>
+                <div class="preco">
+                  <div class="risco"></div>
+                  <div class="cifrao">R$</div>
+                  <div class="reais">499</div>
+                  <div class="centavos">,87</div>
+                </div>
+              </div>
+            </div>
+            <div class="oferta-exclusiva">
+              <h5>
+                OFERTA EXCLUSIVA <br />
+                <span>(APENAS ENQUANTO DURAREM AS VAGAS)</span>
+              </h5>
+              <div class="preco">
+                <div class="cifrao">R$</div>
+                <div class="reais">599</div>
+                <div class="centavos">,90</div>
+                <div class="parcelas">OU 12X 49,91</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="btn-verde">
+              ADQUIRA AGORA E COMECE A MUDAR O RUMO DA SUA VIDA FINANCEIRA.
+            </a>
+            <p>ESTA OFERTA PODE SAIR DO AR A QUALQUER MOMENTO</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="relogio">
+              <img src="./img/icon-clock.svg" alt="icone relogio" />
+              <h1 class="minutos">
+                14
+                <span class="legenda">min</span>
+              </h1>
+              <span>:</span>
+              <h1 class="segundos">
+                59
+                <span class="legenda"> seg </span>
+              </h1>
             </div>
           </div>
         </div>
