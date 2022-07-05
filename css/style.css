@@ -356,6 +356,95 @@ section.comece .precos .box-total .preco .risco {
   bottom: calc(50% - 0.1rem);
   transform: skew(0deg, -15deg);
 }
+section.comece .oferta-exclusiva {
+  width: fit-content;
+  margin: 0 auto;
+  background: var(--verde-300);
+  border-radius: 5rem;
+  padding: 2rem;
+}
+section.comece .oferta-exclusiva h5 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  line-height: 1;
+  text-align: center;
+}
+section.comece .oferta-exclusiva h5 span {
+  font-size: 1rem;
+  color: var(--branco);
+}
+section.comece .oferta-exclusiva .preco {
+  margin-top: 1rem;
+  display: grid;
+  color: var(--branco);
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 0.1rem;
+}
+section.comece .oferta-exclusiva .preco .cifrao {
+  font-size: 2.1rem;
+  line-height: 0.8;
+  align-self: flex-end;
+}
+section.comece .oferta-exclusiva .preco .reais {
+  font-size: 5.7rem;
+  line-height: 0.8;
+  font-weight: 700;
+}
+section.comece .oferta-exclusiva .preco .centavos {
+  font-size: 2.7rem;
+  line-height: 0.8;
+  font-weight: 700;
+}
+section.comece .oferta-exclusiva .preco .parcelas {
+  text-align: center;
+  font-size: 1.2rem;
+  grid-column: 1/4;
+}
+section.comece .relogio {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  position: relative;
+  border: 0.3rem solid var(--verde-300);
+  border-radius: 10rem;
+  padding: 2rem 4rem;
+  margin: 2rem auto;
+}
+section.comece .relogio .icone-relogio {
+  background-color: var(--verde-300);
+  position: absolute;
+  display: flex;
+  left: calc(50% - 2rem);
+  top: -2rem;
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+section.comece .relogio .icone-relogio img {
+  width: 2.5rem;
+}
+section.comece .relogio .minutos,
+section.comece .relogio .segundos {
+  text-align: center;
+}
+section.comece .relogio h1 {
+  font-size: 5.8rem;
+  color: var(--branco);
+  line-height: 0.9;
+}
+section.comece .relogio .legenda {
+  color: var(--branco);
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+section.comece .relogio .pontos {
+  color: var(--verde-300);
+  font-size: 6rem;
+  line-height: 0.8;
+}
 .resolucao {
   width: 50px;
   height: 50px;
