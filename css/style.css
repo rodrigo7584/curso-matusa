@@ -143,7 +143,7 @@ section.detaques .cartoes .cartao .icone img {
   height: 7.5rem;
 }
 section.bonus {
-  background: url('../img/bg-2.png');
+  background-image: url('../img/bg-bonus.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -296,7 +296,7 @@ section.prova-sucesso .glider-prev {
   top: 50%;
 }
 section.comece {
-  background: url('../img/bg-3.png');
+  background-image: url('../img/bg-comece.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -514,10 +514,28 @@ section.comece .relogio .pontos {
   .resolucao {
     background-color: black;
   }
+  section.topo {
+    background-image: url('../img/bg-1399-topo.png');
+  }
+  section.bonus {
+    background-image: url('../img/bg-1399-bonus.png');
+  }
+  section.comece {
+    background-image: url('../img/bg-1399-comece.png');
+  }
 }
 @media (max-width: 1199.98px) {
   .resolucao {
     background-color: red;
+  }
+  section.topo {
+    background-image: url('../img/bg-1199-topo.png');
+  }
+  section.bonus {
+    background-image: url('../img/bg-1199-bonus.png');
+  }
+  section.comece {
+    background-image: url('../img/bg-1199-comece.png');
   }
 }
 @media (max-width: 991.98px) {
@@ -526,6 +544,15 @@ section.comece .relogio .pontos {
   }
   h5 {
     font-size: 1.4rem;
+  }
+  section.topo {
+    background-image: url('../img/bg-991-topo.png');
+  }
+  section.bonus {
+    background-image: url('../img/bg-991-bonus.png');
+  }
+  section.comece {
+    background-image: url('../img/bg-991-comece.png');
   }
   section.bonus h1 {
     font-size: 4.6rem;
@@ -543,6 +570,15 @@ section.comece .relogio .pontos {
   }
   h3 {
     font-size: 3rem;
+  }
+  section.topo {
+    background-image: url('../img/bg-767-topo.png');
+  }
+  section.bonus {
+    background-image: url('../img/bg-767-bonus.png');
+  }
+  section.comece {
+    background-image: url('../img/bg-767-comece.png');
   }
   section.topo,
   section.topo .row {
@@ -570,6 +606,15 @@ section.comece .relogio .pontos {
   .resolucao {
     background-color: yellowgreen;
   }
+  section.topo {
+    background-image: url('../img/bg-576-topo.png');
+  }
+  section.bonus {
+    background-image: url('../img/bg-576-bonus.png');
+  }
+  section.comece {
+    background-image: url('../img/bg-576-comece.png');
+  }
   section.quem-e .glider-prev,
   section.prova-sucesso .glider-prev {
     left: 0;
@@ -582,5 +627,11 @@ section.comece .relogio .pontos {
 @media (max-width: 400px) {
   .resolucao {
     background-color: pink;
+  }
+  section.topo {
+    background-image: url('../img/bg-400-topo.png');
+  }
+  section.bonus .item-bonus .box-valor {
+    padding: 1.5rem 2rem;
   }
 }
