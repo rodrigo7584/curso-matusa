@@ -62,9 +62,8 @@ a:hover {
   color: var(--branco);
 }
 .btn-verde {
-  -webkit-animation: pulsar 2s ease-in-out infinite both;
-  animation: pulsar 2s ease-in-out infinite both;
-  font-size: 2.5rem;
+  -webkit-animation: pulsarVerde 2s ease-in-out infinite both;
+  animation: pulsarVerde 2s ease-in-out infinite both;
   display: inline-block;
   text-transform: uppercase;
   margin: 1rem 0;
@@ -84,13 +83,13 @@ a:hover {
   -webkit-filter: drop-shadow(0 0 0.3rem var(--verde-200)) brightness(0.8);
 }
 .btn-preto {
-  -webkit-animation: pulsar 2s ease-in-out infinite both;
-  animation: pulsar 2s ease-in-out infinite both;
-  font-size:2.5rem;
+  -webkit-animation: pulsarBranco 2s ease-in-out infinite both;
+  animation: pulsarBranco 2s ease-in-out infinite both;
   display: inline-block;
   text-transform: uppercase;
   margin: 1rem 0;
   background: var(--preto);
+  filter: drop-shadow(0 0 0.3rem var(--branco));
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -100,8 +99,22 @@ a:hover {
 }
 .btn-preto:hover {
   transform: scale(0.99);
-  filter: brightness(0.9);
+  filter: drop-shadow(0 0 0.3rem var(--branco))) brightness(0.8);
+  -webkit-filter: drop-shadow(0 0 0.3rem var(--branco))) brightness(0.8);
 }
+section.topo .btn-verde {
+  font-size: 2.7rem;
+}
+section.bonus .btn-verde {
+  font-size: 3rem;
+}
+section.prova-sucesso .btn-preto {
+  font-size: 3rem;
+}
+section.comece .btn-verde {
+  font-size: 2.5rem;
+}
+
 section.topo {
   min-height: 90vh;
   background-image: url('../img/bg-topo.png');
@@ -535,6 +548,9 @@ section.comece .relogio .pontos {
   .resolucao {
     background-color: red;
   }
+  section.comece .btn-verde {
+    font-size: 2.2rem;
+  }
   section.topo {
     background-image: url('../img/bg-1199-topo.png');
   }
@@ -548,6 +564,18 @@ section.comece .relogio .pontos {
 @media (max-width: 991.98px) {
   .resolucao {
     background-color: purple;
+  }
+  section.topo .btn-verde {
+    font-size: 2.3rem;
+  }
+  section.bonus .btn-verde {
+    font-size: 2.5rem;
+  }
+  section.prova-sucesso .btn-preto {
+    font-size: 2.5rem;
+  }
+  section.comece .btn-verde {
+    font-size: 1.6rem;
   }
   h5 {
     font-size: 1.4rem;
@@ -568,6 +596,18 @@ section.comece .relogio .pontos {
 @media (max-width: 767.98px) {
   .resolucao {
     background-color: aqua;
+  }
+  section.topo .btn-verde {
+    font-size: 2rem;
+  }
+  section.bonus .btn-verde {
+    font-size: 2.1rem;
+  }
+  section.prova-sucesso .btn-preto {
+    font-size: 2.1rem;
+  }
+  section.comece .btn-verde {
+    font-size: 2rem;
   }
   h1 {
     font-size: 5rem;
@@ -600,9 +640,6 @@ section.comece .relogio .pontos {
   section.bonus .box-bonus {
     grid-template-columns: 1fr;
   }
-  section.comece .btn-verde{
-    font-size: 2.3rem;
-  }
   section.comece .precos {
     grid-template-columns: 1fr;
     row-gap: 0;
@@ -615,6 +652,18 @@ section.comece .relogio .pontos {
 @media (max-width: 575.98px) {
   .resolucao {
     background-color: yellowgreen;
+  }
+  section.topo .btn-verde {
+    font-size: 1.8rem;
+  }
+  section.bonus .btn-verde {
+    font-size: 1.5rem;
+  }
+  section.prova-sucesso .btn-preto {
+    font-size: 1.5rem;
+  }
+  section.comece .btn-verde {
+    font-size: 1.3rem;
   }
   section.topo {
     background-image: url('../img/bg-576-topo.png');
@@ -633,14 +682,22 @@ section.comece .relogio .pontos {
   section.prova-sucesso .glider-next {
     right: 0;
   }
-  .btn-verde,
-  .btn-preto{
-    font-size: 1.5rem!important;
-  }
 }
 @media (max-width: 400px) {
   .resolucao {
     background-color: pink;
+  }
+  section.topo .btn-verde {
+    font-size: 1.5rem;
+  }
+  section.bonus .btn-verde {
+    font-size: 1.2rem;
+  }
+  section.prova-sucesso .btn-preto {
+    font-size: 1.2rem;
+  }
+  section.comece .btn-verde {
+    font-size: 1.2rem;
   }
   section.topo {
     background-image: url('../img/bg-400-topo.png');
@@ -650,72 +707,31 @@ section.comece .relogio .pontos {
   }
 }
 
-@-webkit-keyframes pulsar {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+@keyframes pulsarVerde {
+  0% {
+    filter: drop-shadow(0 0 0.4rem var(--verde-200));
+    -webkit-filter: drop-shadow(0 0 0.4rem var(--verde-200));
   }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+  50% {
+    filter: drop-shadow(0 0 0.8rem var(--verde-200));
+    -webkit-filter: drop-shadow(0 0 0.8rem var(--verde-200));
   }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+  100% {
+    filter: drop-shadow(0 0 0.4rem var(--verde-200));
+    -webkit-filter: drop-shadow(0 0 0.4rem var(--verde-200));
   }
 }
-@keyframes pulsar {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+@keyframes pulsarBranco {
+  0% {
+    filter: drop-shadow(0 0 0.4rem var(--branco));
+    -webkit-filter: drop-shadow(0 0 0.4rem var(--branco));
   }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+  50% {
+    filter: drop-shadow(0 0 0.8rem var(--branco));
+    -webkit-filter: drop-shadow(0 0 0.8rem var(--branco));
   }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+  100% {
+    filter: drop-shadow(0 0 0.4rem var(--branco));
+    -webkit-filter: drop-shadow(0 0 0.4rem var(--branco));
   }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  
 }
