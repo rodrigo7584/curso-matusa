@@ -62,6 +62,9 @@ a:hover {
   color: var(--branco);
 }
 .btn-verde {
+  -webkit-animation: pulsar 2s ease-in-out infinite both;
+  animation: pulsar 2s ease-in-out infinite both;
+  font-size: 2.5rem;
   display: inline-block;
   text-transform: uppercase;
   margin: 1rem 0;
@@ -81,6 +84,9 @@ a:hover {
   -webkit-filter: drop-shadow(0 0 0.3rem var(--verde-200)) brightness(0.8);
 }
 .btn-preto {
+  -webkit-animation: pulsar 2s ease-in-out infinite both;
+  animation: pulsar 2s ease-in-out infinite both;
+  font-size:2.5rem;
   display: inline-block;
   text-transform: uppercase;
   margin: 1rem 0;
@@ -107,7 +113,8 @@ section.topo .row {
 }
 section.topo .legenda-video {
   margin-top: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.3;
 }
 section.detaques .cartoes {
   display: flex;
@@ -593,6 +600,9 @@ section.comece .relogio .pontos {
   section.bonus .box-bonus {
     grid-template-columns: 1fr;
   }
+  section.comece .btn-verde{
+    font-size: 2.3rem;
+  }
   section.comece .precos {
     grid-template-columns: 1fr;
     row-gap: 0;
@@ -623,6 +633,10 @@ section.comece .relogio .pontos {
   section.prova-sucesso .glider-next {
     right: 0;
   }
+  .btn-verde,
+  .btn-preto{
+    font-size: 1.5rem!important;
+  }
 }
 @media (max-width: 400px) {
   .resolucao {
@@ -634,4 +648,74 @@ section.comece .relogio .pontos {
   section.bonus .item-bonus .box-valor {
     padding: 1.5rem 2rem;
   }
+}
+
+@-webkit-keyframes pulsar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes pulsar {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  
 }
