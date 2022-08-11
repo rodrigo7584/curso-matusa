@@ -490,7 +490,7 @@ section.comece .oferta-exclusiva .preco .parcelas {
 }
 section.comece .relogio {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: 80px auto 80px;
   gap: 1rem;
   position: relative;
   border: 0.3rem solid var(--verde-300);

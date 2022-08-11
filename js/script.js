@@ -41,3 +41,18 @@ new Glider(document.querySelector('section.prova-sucesso .glider'), {
     }
   ]
 })
+const time = new Date().getTime() + 900000
+
+const timer = setInterval(function () {
+  const timeNow = new Date().getTime()
+  const timeLeft = time - timeNow
+  let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))
+  let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000)
+  document.querySelector('.relogio .minutos h1').innerHTML = minutes
+  document.querySelector('.relogio .segundos h1').innerHTML = seconds
+  if (timeLeft < 0) {
+    clearInterval(timer)
+    document.querySelector('.relogio .minutos h1').innerHTML = 0
+    document.querySelector('.relogio .segundos h1').innerHTML = 0
+  }
+}, 1000)
